@@ -24,37 +24,37 @@ int translate (char *str)
 			switch (*rd)
 				{
 				case '\\':
-					*rd++;
+					++(*rd);
 					*wr++ = '\\';
 					break;
 
 				case 'a':
-					*rd++;
+					++(*rd);
 					*wr++ = '\a';
 					break;
 
 				case 's':
-					*rd++;
+					++(*rd);
 					*wr++ = ' ';
 					break;
 
 				case 'n':
-					*rd++;
+					++(*rd);
 					*wr++ = '\n';
 					break;
 
 				case 'r':
-					*rd++;
+					++(*rd);
 					*wr++ = '\r';
 					break;
 
 				case 't':
-					*rd++;
+					++(*rd);
 					*wr++ = '\t';
 					break;
 
 				case 'v':
-					*rd++;
+					++(*rd);
 					*wr++ = '\v';
 					break;
 
